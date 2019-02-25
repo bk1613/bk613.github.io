@@ -1,0 +1,34 @@
+body{
+  background-color: grey;
+}
+#game{
+  background-color: green;
+  text-align: center;
+}
+
+nav ul{
+  list-style-type: none;
+  width: 200px;
+  border: 25px soild green;
+  padding: 25px;
+  margin: 25px;
+  background-color: red;
+}
+
+li a{
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+li a:hover{
+  background-color: bisque;
+  color: palevioletred;
+}
+
+.cen{
+  text-align: center;
+}
+
+iframe:focus{
+  outline: none;
+}
