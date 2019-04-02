@@ -83,3 +83,7 @@ p {
   right: 400px;
   font-size: 50px;
 }
+
+img {
+  box-shadow: 5px 5px 1px 5px black;
+}
