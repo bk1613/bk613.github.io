@@ -10,10 +10,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
     <title>Mainpage</title>
   </head>
   <body>
-    <h1 id="homepage">NetArc</h1>
+    <!-- <h1 id="homepage">NetArc</h1> -->
+    <div id="homepage">
+      <img src="logo_title.svg" width = 450px alt="Logo brand" >
+    </div>
 
     <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -31,7 +38,14 @@
         <a class="nav-link" href="#home"><i class="fa fa-home">Home</i><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html"><i class="fa fa-gamepad"></i>Gamees</a>
+        <a class="nav-link-dropdown" data-toggle = "dropdown" href="about.html"><i class="fa fa-gamepad"></i>Games <span class="caret"></span></a>
+        <ul class = "dropdown-menu small-menu">
+          <li><a href = "about.html#Game">Home</a></li>
+          <li><a href = "about.html#action">Action</a></li>
+          <li><a href = "about.html#adventure">Adventure</a></li>
+          <li><a href = "about.html#FPS">FPS</a></li>
+          <li><a href = "about.html#fighting">Fighting</a></li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="contact.html"><i class="fa fa-industry"></i>industry</a>
@@ -46,10 +60,6 @@
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-    </form>
-    <form class="form-inline my-2 my-lg-0">
-      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-      <span class = "divider"> | </span> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="acc.html">Sign in <i class="fa fa-user"></i></a></button>
     </form>
   </div>
 </nav>
@@ -71,7 +81,7 @@
           <img src="https://www.hdwallpaper.nu/wp-content/uploads/2017/09/destiny_2-15.jpg" class="d-block w-100" width = 100px height= 800px alt="...">
         </div>
         <div class="carousel-item">
-          <img src="https://compass-ssl.xbox.com/assets/4d/ea/4deab6e9-ae1f-432b-bc93-b426d8ad7fc2.jpg?n=103763897_GLP-Page-Hero-1084_1920x835.jpg" class="d-block w-100" width = 800px height= 450px alt="...">
+          <img src="https://compass-ssl.xbox.com/assets/4d/ea/4deab6e9-ae1f-432b-bc93-b426d8ad7fc2.jpg?n=103763897_GLP-Page-Hero-1084_1920x835.jpg" class="d-block w-100" width = 100px height= 800px alt="...">
         </div>
         <div class="carousel-item">
           <img src="http://images.pushsquare.com/news/2019/03/guide_mortal_kombat_11_-_all_confirmed_characters/large.jpg" class="d-block w-100" width = 100px height= 800px alt="...">
@@ -91,19 +101,23 @@
       <div class="row">
         <div class="col-sm" id = "white">
           <div class="col-word"> Recent Games </div>
-          <i class="fa fa-star" style="font-size:100px;"></i>
+          <div><img src="tenor.gif" alt=""></div>
+
         </div>
         <div class="col-sm">
           <div class="col-word"> Top games </div>
-          <i class="fa fa-space-shuttle" style="font-size:100px;"></i>
+          <div><img src="26b6638c68960f302183b610131d63e2.gif" alt=""></div>
+
         </div>
         <div class="col-sm">
           <div class="col-word"> This years Game </div>
-          <i class="fa fa-bomb" style="font-size:100px;"></i>
+          <div><img src="2bc478de7de5f8bbf68a828452ecc1fb.gif" alt="" height= 245px></div>
+
         </div>
         <div class="col-sm">
-          <div class="col-word"> products </div>
-          <i class="fa fa-bolt" style="font-size:100px;"></i>
+          <div class="col-word"> Products </div>
+          <div><img src="source.gif" alt="" height= 245px></div>
+
         </div>
       </div>
     </div>

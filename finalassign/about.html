@@ -3,15 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script
+
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+
+  crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Games</title>
+
+
   </head>
   <body>
-  <h1 id="Gamepage">NetArc</h1>
+  <!-- <h1 id="Gamepage">NetArc</h1> -->
+  <div id="Gamepage">
+    <img src="logo_title.svg" width = 450px alt="Logo brand" >
+  </div>
 
   <nav class="navbar navbar-expand-lg">
 <!-- <a class="navbar-brand" href="#">Brian Kao</a> -->
@@ -24,8 +36,15 @@
     <li class="nav-item">
       <a class="nav-link" href="index.html"><i class="fa fa-home">Home</i></a>
     </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="#Game"><i class="fa fa-gamepad"></i>Games<span class="sr-only">(current)</span></a>
+    <li class="nav-item">
+      <a class="nav-link-dropdown" data-toggle = "dropdown" href="about.html"><i class="fa fa-gamepad"></i>Games</a>
+      <ul class = "dropdown-menu small-menu">
+        <li><a href = "#Game">Home</a></li>
+        <li><a href = "#action">Action</a></li>
+        <li><a href = "#adventure">Adventure</a></li>
+        <li><a href = "#FPS">FPS</a></li>
+        <li><a href = "#fighting">Fighting</a></li>
+      </ul>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="contact.html"><i class="fa fa-industry"></i>industry</a>
@@ -41,22 +60,21 @@
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
   </form>
-  <form class="form-inline my-2 my-lg-0">
-    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+  <!-- <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <span class = "divider"> | </span> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="acc.html">Sign in <i class="fa fa-user"></i></a></button>
-  </form>
+  </form> -->
 </div>
 </nav>
 
 <div id="Game">
+    <h2>Wecolme to Game City</h2>
+    <p>If you have created your own game, send and share. click here if you want</p>
+    <button id ='btn1'>don't have game: hide</button>
+    <button id = 'btn2'>have game: show</button>
 
-    <div>
-      Here is where you can buy and share what ever games that has been or what will be created;
-    </div>
-    <p>If you have created your own game send and share. If you are a member</p>
-    <div>
-      <form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload" id="fileupload"> <label for="fileupload"> Select a file to upload</label> <input type="submit" value="submit"> </form>
-    </div>
+    <form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload" id="fileupload"> <label for="fileupload"> Select a file to upload</label> <input type="submit" value="submit"> </form>
+
     <p>Free shared games</p>
   <div class="owngame">
     <div class="grid-item"> Express rush <p>free trial</p> </div>
@@ -67,58 +85,58 @@
   </div>
 
   Action Games:
-  <div class="grid-container">
-    <div class="grid-item"> <img src="https://static.raru.co.za/cover/2016/06/14/4771107-l.jpg?v=1516777382" width = 150px height= 200px alt="God of war"> <p>God of War</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="http://images.pushsquare.com/games/ps4/devil_may_cry_hd_collection/cover_large.jpg" width = 150px height= 200px alt="Devil May cry HD collection"> <p>Devil May cry HD collection</p> <p>$39.99</p> </div>
-    <div class="grid-item"> <img src="https://www.gamereleasedates.net/images/covers/xboxone/cover-xboxone-deadpool.jpg" width = 150px height= 200px alt="Deapool"> <p>Deapool</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://10deb7fbfece20ff53da-95da5b03499e7e5b086c55c243f676a1.ssl.cf1.rackcdn.com/77d7173aec1bead8a2c8be304eb432c5_xl.jpg" width = 150px height= 200px alt="Batman Arkham"> <p>Batman Arkham</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://s1.gaming-cdn.com/images/products/2670/orig/devil-may-cry-5-cover.jpg" width = 150px height= 200px alt="Devil MAy Cry 5"> <p>Devil MAy Cry 5</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://www.mobygames.com/images/covers/l/406779-final-fantasy-xv-playstation-4-front-cover.jpg" width = 150px height= 200px alt="Final Fantasy XV"> <p>Final Fantasy XV</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Ratchet_and_Clank_cover.jpg" width = 150px height= 200px alt="Ratchet and Clank"> <p>Ratchet and Clank</p>  <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://www.mobygames.com/images/covers/l/414543-nier-automata-playstation-4-front-cover.jpg" width = 150px height= 200px alt="Nier: Automata"> <p>Nier: Automata</p> <p>$49.99</p> </div>
+  <div id = "action">
+    <div id = "GOW" class="grid-item"> <img src="https://static.raru.co.za/cover/2016/06/14/4771107-l.jpg?v=1516777382" width = 150px height= 200px alt="God of war"> <p id = "godofwar"></p> </div>
+    <div id = "DMC" class="grid-item"> <img src="http://images.pushsquare.com/games/ps4/devil_may_cry_hd_collection/cover_large.jpg" width = 150px height= 200px alt="Devil May cry HD collection">  <p id = "Devilmaycry"></p> </div>
+    <div id = "Dp" class="grid-item"> <img src="https://www.gamereleasedates.net/images/covers/xboxone/cover-xboxone-deadpool.jpg" width = 150px height= 200px alt="Deapool">  <p id = "Deadpool"></p> </div>
+    <div id = "BA" class="grid-item"> <img src="https://10deb7fbfece20ff53da-95da5b03499e7e5b086c55c243f676a1.ssl.cf1.rackcdn.com/77d7173aec1bead8a2c8be304eb432c5_xl.jpg" width = 150px height= 200px alt="Batman Arkham">  <p id = "Batman"></p> </div>
+    <div id = "DMC5" class="grid-item"> <img src="https://s1.gaming-cdn.com/images/products/2670/orig/devil-may-cry-5-cover.jpg" width = 150px height= 200px alt="Devil MAy Cry 5">  <p id = "devil5"></p> </div>
+    <div id = "FFXV" class="grid-item"> <img src="https://www.mobygames.com/images/covers/l/406779-final-fantasy-xv-playstation-4-front-cover.jpg" width = 150px height= 200px alt="Final Fantasy XV">  <p id = "finalfantasy"></p> </div>
+    <div id = "RAC" class="grid-item"> <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Ratchet_and_Clank_cover.jpg" width = 150px height= 200px alt="Ratchet and Clank">  <p id = "Ratandcla"></p> </div>
+    <div id = "N:A" class="grid-item"> <img src="https://www.mobygames.com/images/covers/l/414543-nier-automata-playstation-4-front-cover.jpg" width = 150px height= 200px alt="Nier: Automata">  <p id = "Nier"></p> </div>
   </div>
 
   Adventure Games:
-  <div class="grid-container">
-    <div class="grid-item"> <img src="http://cdn4.dualshockers.com/wp-content/uploads/2015/01/UnchartedCoverMockUP.png" width = 150px height= 200px alt="Uncharted 4: A thief's end"> <p>Uncharted 4: A thief's end</p> <p>$19.99</p> </div>
-    <div class="grid-item"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Spider-Man_PS4_cover.jpg/220px-Spider-Man_PS4_cover.jpg" width = 150px height= 200px alt="Spider-Man"> <p>Spider-Man</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://upload.wikimedia.org/wikipedia/he/d/db/Assassin%27s_Creed_Odyssey_Cover.jpg" width = 150px height= 200px alt="Assassins creed Odyssey"> <p>Assassins creed Odyssey</p> <p>$59.99</p> </div>
-    <div class="grid-item"> <img src="http://img04.deviantart.net/3608/i/2017/013/1/0/tloz_breath_of_the_wild_game_cover_by_gmivan-dav83o9.jpg" width = 150px height= 200px alt="The legend of Zelda: Breath of the wild"> <p>The legend of Zelda: Breath of the wild</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://mms.businesswire.com/media/20170613006236/en/592427/5/Switch_SuperMarioOdyssey_illustration_02_FINAL.jpg" width = 150px height= 200px alt="Super Mario Odyssey"> <p>Super Mario Odyssey</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://www.gamereleasedates.net/images/covers/pc/pc-grand-theft-auto-v.jpg" width = 150px height= 200px alt="Grand Theft Auto V"> <p>Grand Theft Auto V</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Monster_Hunter_World_cover_art.jpg" width = 150px height= 200px alt="Monster Hunter: World"> <p>Monster Hunter: World</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://www.mobygames.com/images/covers/l/382820-horizon-zero-dawn-playstation-4-front-cover.png" width = 150px height= 200px alt="Horizon Zero Dawn"> <p>Horizon Zero Dawn</p> <p>$49.99</p> </div>
+  <div id = "adventure">
+    <div id = "U4" class="grid-item"> <img src="http://cdn4.dualshockers.com/wp-content/uploads/2015/01/UnchartedCoverMockUP.png" width = 150px height= 200px alt="Uncharted 4: A thief's end"> <p id = "uncharted"></p> </div>
+    <div id = "SM" class="grid-item"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Spider-Man_PS4_cover.jpg/220px-Spider-Man_PS4_cover.jpg" width = 150px height= 200px alt="Spider-Man"> <p id = "spider"></p> </div>
+    <div id = "ACO" class="grid-item"> <img src="https://upload.wikimedia.org/wikipedia/he/d/db/Assassin%27s_Creed_Odyssey_Cover.jpg" width = 150px height= 200px alt="Assassins creed Odyssey"> <p id = "Assassin"></p> </div>
+    <div id = "TLOZ" class="grid-item"> <img src="http://img04.deviantart.net/3608/i/2017/013/1/0/tloz_breath_of_the_wild_game_cover_by_gmivan-dav83o9.jpg" width = 150px height= 200px alt="The legend of Zelda: Breath of the wild"> <p id = "zelda"></p> </div>
+    <div id = "SMO" class="grid-item"> <img src="https://mms.businesswire.com/media/20170613006236/en/592427/5/Switch_SuperMarioOdyssey_illustration_02_FINAL.jpg" width = 150px height= 200px alt="Super Mario Odyssey"> <p id = "mario"></p> </div>
+    <div id = "GTA" class="grid-item"> <img src="https://www.gamereleasedates.net/images/covers/pc/pc-grand-theft-auto-v.jpg" width = 150px height= 200px alt="Grand Theft Auto V"> <p id = "Theft"></p>  </div>
+    <div id = "MHW" class="grid-item"> <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Monster_Hunter_World_cover_art.jpg" width = 150px height= 200px alt="Monster Hunter: World"> <p id = "Monsterhunter"></p>  </div>
+    <div id = "HZD" class="grid-item"> <img src="https://www.mobygames.com/images/covers/l/382820-horizon-zero-dawn-playstation-4-front-cover.png" width = 150px height= 200px alt="Horizon Zero Dawn"> <p id = "Horizon"></p>  </div>
   </div>
 
   First-Person Games:
-  <div class="grid-container">
-    <div class="grid-item"> <img src="https://www.mobygames.com/images/covers/l/368100-titanfall-2-xbox-one-front-cover.png" width = 150px height= 200px alt="Titanfall 2"> <p>Titanfall 2</p> <p>$19.99</p> </div>
-    <div class="grid-item"> <img src="https://gamepreorders.com/wp-content/uploads/2016/03/overwatch-cover.jpg" width = 150px height= 200px alt="Overwatch"> <p>Overwatch</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="http://vignette1.wikia.nocookie.net/callofduty/images/1/1b/Call_of_Duty_Advanced_Warfare_cover.jpg/revision/latest?cb=20150625230457" width = 150px height= 200px alt=">Call of Duty: Advanced War"> <p>Call of Duty: Advanced War</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://megagames.com/sites/default/files/game-content-images/cod4__cover_charlie1.jpg" width = 150px height= 200px alt="Call of Duty: Modern Warfare"> <p>Call of Duty: Modern Warfare</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://i.kinja-img.com/gawker-media/image/upload/t_original/azhjxl2adjlh59wc1wrk.png" width = 150px height= 200px alt="Doom"> <p>Doom</p> <p>$19.99</p> </div>
-    <div class="grid-item"> <img src="https://gamingbolt.com/wp-content/uploads/2013/05/battlefield_4-boxart.jpg" width = 150px height= 200px alt="BattleField 4"> <p>BattleField 4</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://u.cubeupload.com/oIFyu9.png" width = 150px height= 200px alt="Halo 5"> <p>Halo 5</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://static.raru.co.za/cover/2017/04/01/5626119-l.jpg?v=1491029305" width = 150px height= 200px alt="Destiny 2"> <p>Destiny 2</p> <p>$49.99</p> </div>
+  <div id = "FPS">
+    <div id = "TF2" class="grid-item"> <img src="https://www.mobygames.com/images/covers/l/368100-titanfall-2-xbox-one-front-cover.png" width = 150px height= 200px alt="Titanfall 2"> <p id = "titan"></p>  </div>
+    <div id = "OW" class="grid-item"> <img src="https://gamepreorders.com/wp-content/uploads/2016/03/overwatch-cover.jpg" width = 150px height= 200px alt="Overwatch"> <p id = "overwatch"></p> </div>
+    <div id = "CODAW" class="grid-item"> <img src="http://vignette1.wikia.nocookie.net/callofduty/images/1/1b/Call_of_Duty_Advanced_Warfare_cover.jpg/revision/latest?cb=20150625230457" width = 150px height= 200px alt=">Call of Duty: Advanced War"> <p id = "advancewarfare"></p></div>
+    <div id = "CODMW" class="grid-item"> <img src="https://megagames.com/sites/default/files/game-content-images/cod4__cover_charlie1.jpg" width = 150px height= 200px alt="Call of Duty: Modern Warfare"> <p id = "Modernwarfare"></p>  </div>
+    <div id = "DM" class="grid-item"> <img src="https://i.kinja-img.com/gawker-media/image/upload/t_original/azhjxl2adjlh59wc1wrk.png" width = 150px height= 200px alt="Doom"> <p id = "doom"></p> </div>
+    <div id = "BF4" class="grid-item"> <img src="https://gamingbolt.com/wp-content/uploads/2013/05/battlefield_4-boxart.jpg" width = 150px height= 200px alt="BattleField 4"> <p id = "battlefield"></p> </div>
+    <div id = "H5" class="grid-item"> <img src="https://u.cubeupload.com/oIFyu9.png" width = 150px height= 200px alt="Halo 5"> <p id = "halo"></p>  </div>
+    <div id = "D2" class="grid-item"> <img src="https://static.raru.co.za/cover/2017/04/01/5626119-l.jpg?v=1491029305" width = 150px height= 200px alt="Destiny 2"> <p id = "destiny"></p> </div>
   </div>
 
   Fighting Games:
-  <div class="grid-container">
-    <div class="grid-item"> <img src="https://www.gamesfull.org/wp-content/uploads/2018/02/street-fighter-v-arcade-edition-2018-poster.jpg" width = 150px height= 200px alt="Street Fighter V"> <p>Street Fighter V</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://cdn.europosters.eu/image/750/affiches/mortal-kombat-x-cover-i24477.jpg" width = 150px height= 200px alt="Mortal Kombat X"> <p>Mortal Kombat X</p> <p>$29.99</p> </div>
-    <div class="grid-item"> <img src="https://static.raru.co.za/cover/2018/03/01/6468038-l.jpg?v=1519887767" width = 150px height= 200px alt="Injustice 2"> <p>Injustice 2</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://orig00.deviantart.net/0ce0/f/2016/189/5/a/tekken_7_cover_art_for_ps4_by_mortal_kombat_xi-da97as3.png" width = 150px height= 200px alt="..."> <p>Tekken 7</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="http://www.dbzgames.org/files/images/games/1/4/390/cover.jpg" width = 150px height= 200px alt="dragon ball fighterz"> <p>dragon ball fighterz</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://static.giantbomb.com/uploads/original/1/12541/3028483-dead+or+alive+6.jpg" width = 150px height= 200px alt="Dead or Alive 6"> <p>Dead or Alive 6</p> <p>$49.99</p> </div>
-    <div class="grid-item"> <img src="https://www.gamereleasedates.net/images/covers/xboxone/cover-xboxone-killer-instinct-definitive-edition.jpg" width = 150px height= 200px alt="Killer Instinct"> <p>Killer Instinct</p> <p>$39.99</p> </div>
-    <div class="grid-item"> <img src="https://www.jeuxcapt.com/wp-content/uploads/2018/06/Super-Smash-Bros-Ultimate-HOME.jpg" width = 150px height= 200px alt="Super Samsh bros. Ultimate"> <p>Super Samsh bros. Ultimate</p> <p>$49.99</p> </div>
+  <div id = "fighting">
+    <div id = "SFV" class="grid-item"> <img src="https://www.gamesfull.org/wp-content/uploads/2018/02/street-fighter-v-arcade-edition-2018-poster.jpg" width = 150px height= 200px alt="Street Fighter V"> <p id = "streetfighter"></p>  </div>
+    <div id = "MKX" class="grid-item"> <img src="https://cdn.europosters.eu/image/750/affiches/mortal-kombat-x-cover-i24477.jpg" width = 150px height= 200px alt="Mortal Kombat X"> <p id = "mortalkombat"></p>  </div>
+    <div id = "IJ2"  class="grid-item"> <img src="https://static.raru.co.za/cover/2018/03/01/6468038-l.jpg?v=1519887767" width = 150px height= 200px alt="Injustice 2"> <p id = "Injustice"></p>  </div>
+    <div id = "T7" class="grid-item"> <img src="https://orig00.deviantart.net/0ce0/f/2016/189/5/a/tekken_7_cover_art_for_ps4_by_mortal_kombat_xi-da97as3.png" width = 150px height= 200px alt="..."> <p id = "tekken"></p>  </div>
+    <div id = "DBF" class="grid-item"> <img src="http://www.dbzgames.org/files/images/games/1/4/390/cover.jpg" width = 150px height= 200px alt="dragon ball fighterz"> <p id = "dragonball"></p> </div>
+    <div id = "DOA6" class="grid-item"> <img src="https://static.giantbomb.com/uploads/original/1/12541/3028483-dead+or+alive+6.jpg" width = 150px height= 200px alt="Dead or Alive 6"> <p id = "deadoralive"></p>  </div>
+    <div id = "KI" class="grid-item"> <img src="https://www.gamereleasedates.net/images/covers/xboxone/cover-xboxone-killer-instinct-definitive-edition.jpg" width = 150px height= 200px alt="Killer Instinct"> <p id = "killerinstinct"></p> </div>
+    <div id = "SSBU" class="grid-item"> <img src="https://www.jeuxcapt.com/wp-content/uploads/2018/06/Super-Smash-Bros-Ultimate-HOME.jpg" width = 150px height= 200px alt="Super Samsh bros. Ultimate"> <p id = "supersmash"></p> </div>
   </div>
 </div>
 
 </div>
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 

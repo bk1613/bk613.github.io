@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Comminuty</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+
   </head>
   <body>
-  <h1 id="Communpage">NetArc</h1>
+  <!-- <h1 id="Communpage">NetArc</h1> -->
+  <div id="homepage">
+    <img src="logo_title.svg" width = 450px alt="Logo brand" >
+  </div>
 
   <nav class="navbar navbar-expand-lg">
 <!-- <a class="navbar-brand" href="#">Brian Kao</a> -->
@@ -25,7 +34,14 @@
       <a class="nav-link" href="index.html"><i class="fa fa-home">Home</i></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="about.html"><i class="fa fa-gamepad"></i>Gmaes</a>
+      <a class="nav-link-dropdown" data-toggle = "dropdown" href="about.html"><i class="fa fa-gamepad"></i>Games</a>
+      <ul class = "dropdown-menu small-menu">
+        <li><a href = "about.html#Game">Home</a></li>
+        <li><a href = "about.html#action">Action</a></li>
+        <li><a href = "about.html#adventure">Adventure</a></li>
+        <li><a href = "about.html#FPS">FPS</a></li>
+        <li><a href = "about.html#fighting">Fighting</a></li>
+      </ul>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="contact.html"><i class="fa fa-industry"></i>industry</a>
@@ -41,23 +57,25 @@
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
   </form>
-  <form class="form-inline my-2 my-lg-0">
-    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+  <!-- <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <span class = "divider"> | </span> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="acc.html">Sign in <i class="fa fa-user"></i></a></button>
-  </form>
+  </form> -->
 </div>
 </nav>
 
 
   <div id = "Community">
-    <form>
-    Chat box:<br>
-    <input type="text" name="firstname" style="height:500px" style="width:500px"><br>
-    </form>
-
-    <input type="submit" value="Submit">
+    
+    <label>Chat:
+      <br><br>
+      <input type="text" id="text-input" size="100" style="height:250px">
+    </label>
+    <br><br>
+    <!-- <button id="square-button" onclick="squareNumber()">submit</button> -->
+    <button onclick="chatting()">Submit</button>
   </div>
-
+  <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

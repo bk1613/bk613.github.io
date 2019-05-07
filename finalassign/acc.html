@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>account</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+
   </head>
   <body>
-  <h1 id="homepage">NetArc</h1>
+  <!-- <h1 id="homepage">NetArc</h1> -->
+  <div id="homepage">
+    <img src="logo_title.svg" width = 450px alt="Logo brand" >
+  </div>
 
   <nav class = "nav-wrapper">
     <ul>
@@ -25,10 +34,12 @@
 
     <form>
     User name:<br>
-    <input type="text" name="firstname"><br>
+    <input type="text" id = 'name' name="fullname">
+    <br>
     Password:<br>
-    <input type="text" name="lastname">
+    <input type="text" id = 'name' name="password">
+    <br>
     </form>
-    <input type="submit" value="Submit">
+    <button id="user-pass" onclick="acess()">Submit</button>
   </body>
 </html>

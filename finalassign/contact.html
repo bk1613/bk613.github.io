@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Companies</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+
   </head>
   <body>
-  <h1 id="Companypage">NetArc</h1>
+  <!-- <h1 id="Companypage">NetArc</h1> -->
+  <div id="homepage">
+    <img src="logo_title.svg" width = 450px alt="Logo brand" >
+  </div>
 
   <nav class="navbar navbar-expand-lg">
 <!-- <a class="navbar-brand" href="#">Brian Kao</a> -->
@@ -25,7 +34,14 @@
       <a class="nav-link" href="index.html"><i class="fa fa-home">Home</i></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="about.html"><i class="fa fa-gamepad"></i>Games</a>
+      <a class="nav-link-dropdown" data-toggle = "dropdown" href="about.html"><i class="fa fa-gamepad"></i>Games</a>
+      <ul class = "dropdown-menu small-menu">
+        <li><a href = "about.html#Game">Home</a></li>
+        <li><a href = "about.html#action">Action</a></li>
+        <li><a href = "about.html#adventure">Adventure</a></li>
+        <li><a href = "about.html#FPS">FPS</a></li>
+        <li><a href = "about.html#fighting">Fighting</a></li>
+      </ul>
     </li>
     <li class="nav-item active">
       <a class="nav-link" href="#companies"><i class="fa fa-industry"></i>industry<span class="sr-only">(current)</span></a>
@@ -41,10 +57,10 @@
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
   </form>
-  <form class="form-inline my-2 my-lg-0">
-    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+  <!-- <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <span class = "divider"> | </span> <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="acc.html">Sign in <i class="fa fa-user"></i></a></button>
-  </form>
+  </form> -->
 </div>
 </nav>
 
@@ -59,11 +75,10 @@
         <li>How to apply for these compnies?</li>
         <li>What is required to get a job into one of these companies</li>
       </ul>
+      <div> Interrested in joining a gaming company then I choose on of the icons on the right side</div>
     </section>
 
   <div class="company-list">
-    <p>Interested in joining one of these companies, click one of these logos:</p>
-
     <ul>
       <li><a href="https://www.nintendo.com/"><img src="http://4.bp.blogspot.com/-oNc06hI0f88/TcbXSesjdpI/AAAAAAAABko/ZCgLVrn0MX0/s1600/nintendo.logo.jpg" width = 200px height= 200px alt="nintendo"></a></li>
       <li><a href="https://www.instagram.com/segaofficial/"><img src="http://1.bp.blogspot.com/-ltt2uIaCkYk/TcbXTIOlZ5I/AAAAAAAABks/mKD3ZxI2dkA/s1600/sega+logo.gif" width = 300px height= 200px alt="SEGA"></a></li>
