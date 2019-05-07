@@ -512,10 +512,9 @@ body{
 
 }
 
-#companies{
-  display: grid;
-  grid-template-columns: auto auto;
-
+#companies .com-feature{
+  color: black;
+  background-color: lightgrey;
 }
 
 .com-feature{
